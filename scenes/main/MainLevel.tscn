@@ -2,6 +2,24 @@
 
 [ext_resource type="Texture2D" uid="uid://dgm6lpnswc5al" path="res://assets/sprites/scenery/main_scenery.png" id="1_sq0qn"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sq0qn"]
+size = Vector2(1091, 28)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ifbmq"]
+size = Vector2(27, 438)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_js8fh"]
+size = Vector2(25, 545)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_77hjr"]
+size = Vector2(956, 107)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6ncrk"]
+size = Vector2(629, 58)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b74ul"]
+size = Vector2(61, 228)
+
 [node name="MainLevel" type="Node2D" unique_id=1632867008]
 
 [node name="Background" type="Sprite2D" parent="." unique_id=1246703034]
@@ -12,9 +30,25 @@ centered = false
 collision_mask = 0
 
 [node name="WallTop" type="CollisionShape2D" parent="WorldCollisions" unique_id=974461289]
+position = Vector2(709.5, 17)
+shape = SubResource("RectangleShape2D_sq0qn")
 
 [node name="WallLeftDriveThru" type="CollisionShape2D" parent="WorldCollisions" unique_id=664755762]
+position = Vector2(150.5, 222)
+shape = SubResource("RectangleShape2D_ifbmq")
 
 [node name="WallRightLobby" type="CollisionShape2D" parent="WorldCollisions" unique_id=977406183]
+position = Vector2(1267.5, 275.5)
+shape = SubResource("RectangleShape2D_js8fh")
+
+[node name="WallDown" type="CollisionShape2D" parent="WorldCollisions" unique_id=9771881]
+position = Vector2(617, 494.5)
+shape = SubResource("RectangleShape2D_77hjr")
 
 [node name="CounterTopKitchen" type="CollisionShape2D" parent="WorldCollisions" unique_id=2059373562]
+position = Vector2(478.5, 242)
+shape = SubResource("RectangleShape2D_6ncrk")
+
+[node name="CounterRightKitchen" type="CollisionShape2D" parent="WorldCollisions" unique_id=1970705325]
+position = Vector2(823.5, 327)
+shape = SubResource("RectangleShape2D_b74ul")
