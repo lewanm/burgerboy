@@ -1,0 +1,37 @@
+# Archivos generados por Godot 4+
+.godot/
+
+# Archivos de importación antiguos (Godot 3)
+.import/
+
+# Archivos temporales y de respaldo de escenas/scripts
+*.tmp
+*~
+*.bak
+
+# Builds y exportaciones locales
+builds/
+export/
+*.exe
+*.pck
+*.zip
+*.dmg
+*.app
+*.apk
+*.aab
+
+# Archivos de configuración local del usuario / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos del Sistema Operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos editables pesados originales (opcional: descomentar si no querés subir .psd o .aseprite al repo)
+# *.psd
+# *.aseprite
+# *.kra
