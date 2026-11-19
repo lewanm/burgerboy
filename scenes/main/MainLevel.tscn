@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://d1os275yuuddp"]
+
+[ext_resource type="Texture2D" uid="uid://dgm6lpnswc5al" path="res://assets/sprites/scenery/main_scenery.png" id="1_sq0qn"]
+
+[node name="MainLevel" type="Node2D" unique_id=1632867008]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1246703034]
+texture = ExtResource("1_sq0qn")
+centered = false
+
+[node name="WorldCollisions" type="StaticBody2D" parent="." unique_id=1779062528]
+collision_mask = 0
+
+[node name="WallTop" type="CollisionShape2D" parent="WorldCollisions" unique_id=974461289]
+
+[node name="WallLeftDriveThru" type="CollisionShape2D" parent="WorldCollisions" unique_id=664755762]
+
+[node name="WallRightLobby" type="CollisionShape2D" parent="WorldCollisions" unique_id=977406183]
+
+[node name="CounterTopKitchen" type="CollisionShape2D" parent="WorldCollisions" unique_id=2059373562]
